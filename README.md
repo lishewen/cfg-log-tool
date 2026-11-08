@@ -1,5 +1,7 @@
 # CfgLogTool
 
+[![build](https://github.com/lishewen/cfg-log-tool/actions/workflows/build.yml/badge.svg)](https://github.com/lishewen/cfg-log-tool/actions/workflows/build.yml)
+
 分析仪器工作站**系统日志 .cfg 文件**的查看 / 导出 / 编辑工具。
 
 某些分析仪器工作站软件把系统日志导出为 `.cfg` 文件：**4 字节小端长度头 + zlib 压缩流**，解压后是 Delphi VCL 风格的“伪 XML”（属性写在标签 `>` 之后），标准 XML 工具无法读取。本工具完整支持该格式的解码、浏览、导出（XML/CSV/可读报告）与无损编辑（按时间删除记录、按 GUID 修改记录时间），提供**跨平台命令行**与 **Windows 图形界面（WPF）** 两个版本。
@@ -16,6 +18,17 @@
 | 按时间前缀删除记录（日/时/分/秒粒度） | ✅ | 多选删除 |
 | 按条目 GUID 修改记录时间 | ✅ | ✅ |
 | 保存前自动回读验证，不覆盖原文件 | ✅ | ✅ |
+
+## 下载
+
+[Releases](https://github.com/lishewen/cfg-log-tool/releases) 提供四个开箱即用的产物（推送版本标签时由 CI 自动构建）：
+
+| 产物 | 平台 | 说明 |
+|---|---|---|
+| `cfglogtool-cli-osx-arm64` | macOS Apple Silicon | 自包含单文件 CLI |
+| `cfglogtool-cli-win-x64` | Windows x64 | 自包含单文件 CLI |
+| `cfglogtool-cli-linux-x64` | Linux x64 | 自包含单文件 CLI |
+| `cfglogtool-gui-win-x64` | Windows x64 | WPF 图形界面，免装运行时 |
 
 ## 快速开始
 
