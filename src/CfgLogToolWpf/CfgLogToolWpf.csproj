@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>CfgLogToolWpf</RootNamespace>
+    <AssemblyName>CfgLogToolGui</AssemblyName>
+    <Version>1.0.0</Version>
+    <Product>CfgLogTool Gui</Product>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CfgLogTool/CfgLogTool.csproj" />
+    <Project Path="src/CfgLogToolWpf/CfgLogToolWpf.csproj" />
+  </Folder>
+</Solution>
